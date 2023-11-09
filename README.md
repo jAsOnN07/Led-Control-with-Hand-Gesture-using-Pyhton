@@ -11,11 +11,11 @@ First you need to open your ardunio ide , ther you have to download a library ca
 After downloading firmata follow the steps shown and upload the code onto your arduino Board
 ![image](https://github.com/jAsOnN07/Led-Control-with-Hand-Gesture-using-Pyhton/assets/90206616/f60ae74e-e26f-4e5a-b973-b832017f38a3)
 
-Now open any coding ide and Clone this repository. 
+Now open any coding ide and Clone the repository using the following command. 
 
 **git clone https://github.com/jAsOnN07/Led-Control-with-Hand-Gesture-using-Pyhton.git**
 
-Now we need to install 4 Python packages you can download them using this command 
+Now we need to install 4 Python packages you can download them using the following  command 
 
 **pip install opencv-python pyFirmata cvzone mediapipe**
 
