@@ -13,8 +13,11 @@ led_5 = board.get_pin('d:5:p')  # pin : 5
 
 
 def led(total, distance):  # function to control led
-
-    value = distance * (1 / 500)  # to convert length between index and thumb fingers to 0-1
+    if distance >= 150:
+        distance = 200
+    elif distance <= 25:
+        distance = 0
+    value = distance * (1 / 200)  # to convert length between index and thumb fingers to 0-1
     if total == 0:
         led_1.write(0)
         led_2.write(0)
