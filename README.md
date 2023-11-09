@@ -23,8 +23,12 @@ Now you can simply run the main.py file and your project should be working .
 
 If you have the latest python version you may face an error like this 
 ![image](https://github.com/jAsOnN07/Led-Control-with-Hand-Gesture-using-Pyhton/assets/90206616/281a0e5c-6622-465d-acb3-01eba169d940)
-Then you just have to click the link in the error and change the 231 line to  **len_args = len(inspect.getfullargspec(func)[0])**
+Then you just have to click the link in the error and change the 231 line to the following line.  
+**len_args = len(inspect.getfullargspec(func)[0])**
+
 Now there should be no errors and the project should be working fine.
 
+# Demo
 
+https://github.com/jAsOnN07/Led-Control-with-Hand-Gesture-using-Pyhton/assets/90206616/ed8dba3f-91b1-4484-9a35-6d2abbe37cfd
 
