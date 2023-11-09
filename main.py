@@ -3,7 +3,7 @@ import cv2
 import control
 
 # Initialize the webcam to capture video
-# The '2' indicates the third camera connected to your computer; '0' would usually refer to the built-in camera
+# "0" indicates the built-in camera of your computer ; if you have an external camera replace "0" with "1" and so on
 cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1500)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1000)
@@ -51,7 +51,9 @@ while True:
             print(f'H2 = {fingers2.count(1)}', end=" ")
 
             # Calculate distance between the index fingers and thumb and draw it on the image
-            length, info, img = detector.findDistance(lmList2[4][0:2], lmList2[8][0:2], img, color=(255, 0, 0),scale=10)
+            length, info, img = detector.findDistance(lmList2[4][0:2], lmList2[8][0:2], img, color=(255, 0, 0),
+                                                      scale=10)
+
             print(length)
             # function from control.py to control led
             control.led(up, length)
